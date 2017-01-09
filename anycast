@@ -1,0 +1,15 @@
+tech-c:
+  - freifunk@yanosz.net
+networks:
+  ipv6:
+    - fdf8:9b7c:6ca6::/48  # Full anycast-Range - not to be announced
+    - fdf8:9b7c:6ca6:1::/64 # Primary DNS - may be announced invidually
+    - fdf8:9b7c:6ca6:2::/64 # Secondary DNS - may be announced invidually
+    - fdf8:9b7c:6ca6:3::/64 # Tertiary DNS - may be announced invidually
+domains:
+  - freifunk
+  - 0.0.d.f.ip6.arpa
+nameservers:
+  - fdf8:9b7c:6ca6:1::1
+  - fdf8:9b7c:6ca6:2::1
+  - fdf8:9b7c:6ca6:3::1
